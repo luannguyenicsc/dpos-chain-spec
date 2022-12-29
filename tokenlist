@@ -1,0 +1,20 @@
+{
+  "name": "Fvidi",
+  "logoURI": "https://scan.fvidi.com/images/header-logo.png",
+  "keywords": [
+    "scaling",
+    "layer2",
+    "infrastructure"
+  ],
+  "timestamp": "2022-12-19T21:19:24.327Z",
+  "tokens": [
+      {
+      "chainId": 1113,
+      "address": "0x9dae279f806b68c38af04aa31b7a0f435e9874c7",
+      "name": "STAKE",
+      "symbol": "STAKE",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/0xBTC/logo.png",
+      },
+  ],
+}
