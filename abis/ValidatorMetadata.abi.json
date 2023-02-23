@@ -1,78 +1,5 @@
 [
 	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_miningKey",
-				"type": "address"
-			}
-		],
-		"name": "pendingChanges",
-		"outputs": [
-			{
-				"name": "firstName",
-				"type": "bytes32"
-			},
-			{
-				"name": "lastName",
-				"type": "bytes32"
-			},
-			{
-				"name": "licenseId",
-				"type": "bytes32"
-			},
-			{
-				"name": "fullAddress",
-				"type": "string"
-			},
-			{
-				"name": "state",
-				"type": "bytes32"
-			},
-			{
-				"name": "zipcode",
-				"type": "bytes32"
-			},
-			{
-				"name": "expirationDate",
-				"type": "uint256"
-			},
-			{
-				"name": "createdDate",
-				"type": "uint256"
-			},
-			{
-				"name": "updatedDate",
-				"type": "uint256"
-			},
-			{
-				"name": "contactEmail",
-				"type": "bytes32"
-			},
-			{
-				"name": "isCompany",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "getTime",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"constant": false,
 		"inputs": [
 			{
@@ -89,10 +16,6 @@
 	{
 		"constant": false,
 		"inputs": [
-			{
-				"name": "_miningKey",
-				"type": "address"
-			},
 			{
 				"name": "_firstName",
 				"type": "bytes32"
@@ -137,62 +60,6 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "owner",
-		"outputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_miningKey",
-				"type": "address"
-			}
-		],
-		"name": "getValidatorName",
-		"outputs": [
-			{
-				"name": "firstName",
-				"type": "bytes32"
-			},
-			{
-				"name": "lastName",
-				"type": "bytes32"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_someone",
-				"type": "address"
-			}
-		],
-		"name": "_isValidator",
-		"outputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"constant": false,
 		"inputs": [
 			{
@@ -208,65 +75,6 @@
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_miningKey",
-				"type": "address"
-			}
-		],
-		"name": "validators",
-		"outputs": [
-			{
-				"name": "firstName",
-				"type": "bytes32"
-			},
-			{
-				"name": "lastName",
-				"type": "bytes32"
-			},
-			{
-				"name": "licenseId",
-				"type": "bytes32"
-			},
-			{
-				"name": "fullAddress",
-				"type": "string"
-			},
-			{
-				"name": "state",
-				"type": "bytes32"
-			},
-			{
-				"name": "zipcode",
-				"type": "bytes32"
-			},
-			{
-				"name": "expirationDate",
-				"type": "uint256"
-			},
-			{
-				"name": "createdDate",
-				"type": "uint256"
-			},
-			{
-				"name": "updatedDate",
-				"type": "uint256"
-			},
-			{
-				"name": "contactEmail",
-				"type": "bytes32"
-			},
-			{
-				"name": "isCompany",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -378,5 +186,193 @@
 		],
 		"name": "FinalizedChange",
 		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_miningKey",
+				"type": "address"
+			}
+		],
+		"name": "_isValidator",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTime",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_miningKey",
+				"type": "address"
+			}
+		],
+		"name": "getValidatorName",
+		"outputs": [
+			{
+				"name": "firstName",
+				"type": "bytes32"
+			},
+			{
+				"name": "lastName",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_miningKey",
+				"type": "address"
+			}
+		],
+		"name": "pendingChanges",
+		"outputs": [
+			{
+				"name": "firstName",
+				"type": "bytes32"
+			},
+			{
+				"name": "lastName",
+				"type": "bytes32"
+			},
+			{
+				"name": "licenseId",
+				"type": "bytes32"
+			},
+			{
+				"name": "fullAddress",
+				"type": "string"
+			},
+			{
+				"name": "state",
+				"type": "bytes32"
+			},
+			{
+				"name": "zipcode",
+				"type": "bytes32"
+			},
+			{
+				"name": "expirationDate",
+				"type": "uint256"
+			},
+			{
+				"name": "createdDate",
+				"type": "uint256"
+			},
+			{
+				"name": "updatedDate",
+				"type": "uint256"
+			},
+			{
+				"name": "contactEmail",
+				"type": "bytes32"
+			},
+			{
+				"name": "isCompany",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_miningKey",
+				"type": "address"
+			}
+		],
+		"name": "validators",
+		"outputs": [
+			{
+				"name": "firstName",
+				"type": "bytes32"
+			},
+			{
+				"name": "lastName",
+				"type": "bytes32"
+			},
+			{
+				"name": "licenseId",
+				"type": "bytes32"
+			},
+			{
+				"name": "fullAddress",
+				"type": "string"
+			},
+			{
+				"name": "state",
+				"type": "bytes32"
+			},
+			{
+				"name": "zipcode",
+				"type": "bytes32"
+			},
+			{
+				"name": "expirationDate",
+				"type": "uint256"
+			},
+			{
+				"name": "createdDate",
+				"type": "uint256"
+			},
+			{
+				"name": "updatedDate",
+				"type": "uint256"
+			},
+			{
+				"name": "contactEmail",
+				"type": "bytes32"
+			},
+			{
+				"name": "isCompany",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
 	}
 ]
